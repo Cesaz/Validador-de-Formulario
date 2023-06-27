@@ -43,6 +43,24 @@ body {
     outline: 0;
 }
 
+.personal_information {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 250px;
+}
+
+.personal_information span {
+    margin-top: 10px;
+}
+
+.social img {
+    width: 32px;
+    height: 32px;
+}
+
+
 .error {
     font-size: 11px;
     background-color: #FF0000;
@@ -50,3 +68,41 @@ body {
     padding: 4px;
     border-radius: 5px;
 }
+
+@media (min-width:450px) and (max-width:800px) {
+    * {
+        box-sizing: unset;
+    }
+
+    body {
+        background-color: #403c56;
+    }
+
+    .screen {
+        justify-content: center;
+        align-items: center;
+        overflow-x: hidden;
+    }
+
+    .left_side {
+        display: flex;
+        justify-content: unset;
+        align-items: unset;
+        margin-top: -500px;
+        height: auto;
+    }
+
+    .left_side img {
+        max-width: none;
+    }
+
+    .right_side {
+        position: fixed;
+        margin-top: 200px;
+    }
+
+    .personal_information {
+        margin-top: 50px;
+    }
+
+}    
