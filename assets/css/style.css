@@ -105,4 +105,42 @@ body {
         margin-top: 50px;
     }
 
-}    
+}
+
+@media (max-width:450px) {
+    * {
+        box-sizing: unset;
+    }
+
+    body {
+        background-color: #403c56;
+    }
+
+    .screen {
+        justify-content: center;
+        align-items: center;
+        overflow-x: hidden;
+    }
+
+    .left_side {
+        display: flex;
+        justify-content: unset;
+        align-items: unset;
+        margin-top: -500px;
+        height: auto;
+    }
+
+    .left_side img {
+        max-width: none;
+    }
+
+    .right_side {
+        position: fixed;
+        margin-top: 0;
+        width: 70vw;
+    }
+
+    .personal_information {
+        margin-top: 50px;
+    }
+}
